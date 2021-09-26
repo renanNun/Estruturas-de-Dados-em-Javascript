@@ -1,0 +1,11 @@
+{
+  "name": "estrutura-de-dados-com-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/main.js"
+  },
+  "repository": "https://github.com/renanNun/Estruturas-de-Dados-em-Javascript.git",
+  "author": "renanNun <renannunes400@gmail.com>",
+  "license": "MIT"
+}
