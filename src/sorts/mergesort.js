@@ -7,7 +7,7 @@ function merge(array, begin, mid, end)
     j = mid + 1;
     k = begin;
 
-    let arr = [];
+    let arr = array.map((x) => x);
 
     while(i <= mid && j <= end)
     {
@@ -37,7 +37,7 @@ function merge(array, begin, mid, end)
 
     for(let p = 0; p <= end; p++)
     {
-        array[p + 1] = arr[p];
+        array[p] = arr[p];
     }
 }
 
@@ -46,9 +46,10 @@ function mergeSort(array, begin, end){
     {
         let mid = (begin + end) / 2;
         mergeSort(array, begin, mid);
-        mergeSort(array,mid + 1, end);
+        mergeSort(array, mid + 1, end);
         merge(array, begin, mid, end);
     }
+
 }
 
 module.exports = mergeSort;
