@@ -5,6 +5,7 @@ const mergeSort = require('./sorts/mergesort');
 const heapSort = require('./sorts/heapsort');
 const quickSort = require('./sorts/quicksort');
 const shellSort = require('./sorts/shellsort');
+const LinkedList = require('./lists/linkedList');
 
 function getRandomNumber(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -55,3 +56,12 @@ console.log("Resultado do quicksort: ", arr);
 arr = array.map((x) => x);
 shellSort(arr, arr.length-1);
 console.log("Resultado do shellsort: ", arr);
+
+// Lista Simplismente encadeada
+
+let list = new LinkedList();
+for(let i = 0; i < array.length; i++){
+    //console.log(`Inserindo na lista ${array[i]}`);
+    list.addBegin(array[i]);
+}
+list.show();
