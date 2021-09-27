@@ -1,5 +1,3 @@
-const swap = require('../utils/utils');
-
 function merge(array, begin, mid, end)
 {
     let i,j,k;
